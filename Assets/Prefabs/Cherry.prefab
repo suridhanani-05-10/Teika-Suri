@@ -21,6 +21,10 @@ PrefabInstance:
       value: -0.05260113
       objectReference: {fileID: 0}
     - target: {fileID: 449202030858526475, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 449202030858526475, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 0.97999996
       objectReference: {fileID: 0}
@@ -356,17 +360,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry
       objectReference: {fileID: 0}
+    - target: {fileID: 674641324065977098, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2245715121580507841, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.9877869
       objectReference: {fileID: 0}
     - target: {fileID: 2245715121580507841, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0005
+      value: -0.019
       objectReference: {fileID: 0}
     - target: {fileID: 2245715121580507841, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 2245715121580507841, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
       propertyPath: m_LocalPosition.z

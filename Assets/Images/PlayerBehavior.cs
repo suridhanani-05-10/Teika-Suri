@@ -4,6 +4,7 @@ public class PlayerBehavior : MonoBehaviour
 {
     public float speed;
     public GameObject fruit;
+    private GameObject currentFruit;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,18 +13,19 @@ public class PlayerBehavior : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
-        if (fruit !=null) {
+        if (currentFruit !=null) {
             Vector3 fruitOffset = new Vector3(0f, -1f, 0f);
-            fruit.transform.position = transform.position + fruitOffset;
-            fruit.GetComponent<PolygonCollider2D>().enabled = false;
-            fruit.GetComponent<Rigidbody2D>().gravityScale = 0f;
+            currentFruit.transform.position = transform.position + fruitOffset;
+            //currentFruit.GetComponent<PolygonCollider2D>().enabled = false;
+            currentFruit.GetComponent<Rigidbody2D>().gravityScale = 0f;
+        } else {
+            currentFruit = Instantiate(fruit, transform.position, Quaternion.identity);
         }
         if (Input.GetKeyDown(KeyCode.Space)) {
             currentFruit.GetComponent<PolygonCollider2D>().enabled = true;
             currentFruit.GetComponent<Rigidbody2D>().gravityScale = 1f;
-        }
             currentFruit = null;
-        
+        }
         if ((Input.GetKey(KeyCode.A))||(Input.GetKey(KeyCode.LeftArrow)))
         {
             Vector3 newPosition = transform.position;
