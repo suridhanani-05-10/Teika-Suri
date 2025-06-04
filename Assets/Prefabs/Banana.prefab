@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 6851358663922335795}
   - component: {fileID: 674641324065977098}
   - component: {fileID: 449202030858526475}
+  - component: {fileID: -715343747971079102}
   m_Layer: 0
   m_Name: Banana
-  m_TagString: Untagged
+  m_TagString: Fruit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,7 +124,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607408901927411617}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -243,3 +244,19 @@ PolygonCollider2D:
       - {x: 1.079993, y: -0.17756411}
       - {x: 1.024541, y: -0.06394166}
   m_UseDelaunayMesh: 0
+--- !u!114 &-715343747971079102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607408901927411617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14ea0c256b374bb48a52e54d971488b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeout: 3
+  timeStart: 0
+  timeThusFar: 0
+  gameOver: {fileID: 0}

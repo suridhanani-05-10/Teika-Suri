@@ -7,6 +7,7 @@ public class PlayerBehavior : MonoBehaviour
     public GameObject currentFruit;
     public float min;
     public float max;
+    public GameObject gameOver;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -46,5 +47,9 @@ public class PlayerBehavior : MonoBehaviour
                 transform.position = newPosition;
             }
         }
+    }
+
+    public void GameOver() {
+        gameOver.SetActive(true);
     }
 }
