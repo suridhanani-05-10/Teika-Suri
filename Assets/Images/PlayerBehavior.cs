@@ -3,8 +3,11 @@ using UnityEngine;
 public class PlayerBehavior : MonoBehaviour
 {
     public float speed;
-    public GameObject fruit;
-    private GameObject currentFruit;
+    public GameObject[] fruits;
+    public GameObject currentFruit;
+    public float min;
+    public float max;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,25 +22,29 @@ public class PlayerBehavior : MonoBehaviour
             //currentFruit.GetComponent<PolygonCollider2D>().enabled = false;
             currentFruit.GetComponent<Rigidbody2D>().gravityScale = 0f;
         } else {
-            currentFruit = Instantiate(fruit, transform.position, Quaternion.identity);
+            int index = Random.Range(0, fruits.Length);
+            currentFruit = Instantiate(fruits[index], transform.position, Quaternion.identity);
         }
         if (Input.GetKeyDown(KeyCode.Space)) {
             currentFruit.GetComponent<PolygonCollider2D>().enabled = true;
             currentFruit.GetComponent<Rigidbody2D>().gravityScale = 1f;
             currentFruit = null;
         }
-        if ((Input.GetKey(KeyCode.A))||(Input.GetKey(KeyCode.LeftArrow)))
-        {
+        if ((Input.GetKey(KeyCode.A))||(Input.GetKey(KeyCode.LeftArrow))){
             Vector3 newPosition = transform.position;
             newPosition.x = newPosition.x - speed;
-            transform.position = newPosition;
+            if (newPosition.x > min) {
+                transform.position = newPosition;
+            }
         }
         if ((Input.GetKey(KeyCode.D))||(Input.GetKey(KeyCode.RightArrow)))
         
         {
             Vector3 newPosition = transform.position;
             newPosition.x = newPosition.x + speed;
-            transform.position = newPosition;
+            if (newPosition.x < max) {
+                transform.position = newPosition;
+            }
         }
     }
 }
