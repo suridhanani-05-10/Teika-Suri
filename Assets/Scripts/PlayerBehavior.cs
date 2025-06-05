@@ -8,6 +8,7 @@ public class PlayerBehavior : MonoBehaviour
     public float min;
     public float max;
     public GameObject gameOver;
+    public int fruitType;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,7 +18,15 @@ public class PlayerBehavior : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
+         
+
         if (currentFruit !=null) {
+            fruitType = currentFruit.GetComponent <FruitBehavior>().fruitType;
+                if (fruitType < 5) {
+                    min = -6;
+                    max = 6;
+                } 
+
             Vector3 fruitOffset = new Vector3(0f, -1f, 0f);
             currentFruit.transform.position = transform.position + fruitOffset;
             //currentFruit.GetComponent<PolygonCollider2D>().enabled = false;
