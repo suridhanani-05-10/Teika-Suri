@@ -1,20 +1,33 @@
 using UnityEngine;
+using TMPro;
 
-public class PlayerBehavior : MonoBehaviour
-{
+public class PlayerBehavior : MonoBehaviour {
+    
     public float speed;
     public GameObject[] fruits;
     public GameObject currentFruit;
     public float min;
     public float max;
-    public GameObject gameOver;
+    public GameObject gameOverText;
     public int fruitType;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
+    public int [] points;
+    public int score;
+    public TMP_Text scoreText;
 
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start(){
+        score = 0;
     }
+
+    public void UpdateScore(int fruitType) {
+        score = score + points[fruitType];
+        scoreText.text = "Score: " + score;
+    }
+
+         public void GameOver() {
+            gameOverText.SetActive(true);
+         }
 
     // Update is called once per frame
     void Update(){
@@ -56,9 +69,5 @@ public class PlayerBehavior : MonoBehaviour
                 transform.position = newPosition;
             }
         }
-    }
-
-    public void GameOver() {
-        gameOver.SetActive(true);
     }
 }

@@ -31,6 +31,7 @@ public void OnCollisionEnter2D(Collision2D collision) {
                 (transform.position.y > otherFruit.transform.position.y
                 && transform.position.x == otherFruit.transform.position.x)) {
                 
+                GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>().UpdateScore(fruitType);
                 GameObject newFruit = 
                     Instantiate(fruits[fruitType+1], Vector3.Lerp(transform.position,
                     otherFruit.transform.position, 0.5f), Quaternion.identity);
@@ -60,6 +61,7 @@ public void OnTriggerStay2D(Collider2D collision) {
         timeThusFar = Time.time - timeStart;
         Debug.Log("Game over Timer updated: " + timeThusFar);
         if (timeThusFar >= timeout) {
+            //Debug.Log("Game over");
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>().GameOver();
         }
     }
