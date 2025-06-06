@@ -14,9 +14,12 @@ public class PlayerBehavior : MonoBehaviour {
     public int [] points;
     public int score;
     public TMP_Text scoreText;
+    public float timer;
+    public float timeout;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start(){
+        timer = 0;
         score = 0;
     }
 
@@ -31,7 +34,7 @@ public class PlayerBehavior : MonoBehaviour {
 
     // Update is called once per frame
     void Update(){
-         
+         timer += Time.deltaTime;
 
         if (currentFruit !=null) {
             fruitType = currentFruit.GetComponent <FruitBehavior>().fruitType;
@@ -53,7 +56,8 @@ public class PlayerBehavior : MonoBehaviour {
             int index = Random.Range(0, fruits.Length);
             currentFruit = Instantiate(fruits[index], transform.position, Quaternion.identity);
         }
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.Space)  && timer > timeout) {
+            timer = 0;
             currentFruit.GetComponent<PolygonCollider2D>().enabled = true;
             currentFruit.GetComponent<Rigidbody2D>().gravityScale = 1f;
             currentFruit = null;
