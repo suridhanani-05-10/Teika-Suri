@@ -764,7 +764,7 @@ MonoBehaviour:
   score: 0
   scoreText: {fileID: 136379991}
   timer: 0
-  timeout: 0
+  timeout: 1
 --- !u!1 &443193136
 GameObject:
   m_ObjectHideFlags: 0

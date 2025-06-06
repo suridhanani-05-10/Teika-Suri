@@ -17,10 +17,14 @@ public class PlayerBehavior : MonoBehaviour {
     public float timer;
     public float timeout;
 
+    private bool isGameOver;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start(){
         timer = 0;
         score = 0;
+
+        isGameOver = false;
     }
 
     public void UpdateScore(int fruitType) {
@@ -30,6 +34,7 @@ public class PlayerBehavior : MonoBehaviour {
 
          public void GameOver() {
             gameOverText.SetActive(true);
+            isGameOver = true;
          }
 
     // Update is called once per frame
@@ -56,20 +61,20 @@ public class PlayerBehavior : MonoBehaviour {
             int index = Random.Range(0, fruits.Length);
             currentFruit = Instantiate(fruits[index], transform.position, Quaternion.identity);
         }
-        if (Input.GetKeyDown(KeyCode.Space)  && timer > timeout) {
+        if (Input.GetKeyDown(KeyCode.Space)  && timer > timeout && !isGameOver) {
             timer = 0;
             currentFruit.GetComponent<PolygonCollider2D>().enabled = true;
             currentFruit.GetComponent<Rigidbody2D>().gravityScale = 1f;
             currentFruit = null;
         }
-        if ((Input.GetKey(KeyCode.A))||(Input.GetKey(KeyCode.LeftArrow))){
+        if ((Input.GetKey(KeyCode.A))||(Input.GetKey(KeyCode.LeftArrow)) && !isGameOver){
             Vector3 newPosition = transform.position;
             newPosition.x = newPosition.x - speed;
             if (newPosition.x > min) {
                 transform.position = newPosition;
             }
         }
-        if ((Input.GetKey(KeyCode.D))||(Input.GetKey(KeyCode.RightArrow)))
+        if ((Input.GetKey(KeyCode.D))||(Input.GetKey(KeyCode.RightArrow)) && !isGameOver)
         
         {
             Vector3 newPosition = transform.position;
