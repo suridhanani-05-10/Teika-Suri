@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 607408901927411617}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.984029, y: -3.0389435, z: 0}
-  m_LocalScale: {x: 0.9868, y: 1, z: 1}
+  m_LocalPosition: {x: 6.1307, y: -3.1729, z: 0}
+  m_LocalScale: {x: 0.865548, y: 0.87712604, z: 0.87712604}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -260,3 +260,5 @@ MonoBehaviour:
   timeStart: 0
   timeThusFar: 0
   gameOver: {fileID: 0}
+  fruits: []
+  fruitType: 0
