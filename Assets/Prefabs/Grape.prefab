@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: fruitTupe
       value: -15
       objectReference: {fileID: 0}
+    - target: {fileID: -715343747971079102, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
+      propertyPath: fruitType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -715343747971079102, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
+      propertyPath: 'fruits.Array.data[2]'
+      value: 
+      objectReference: {fileID: 4915226627498276176}
     - target: {fileID: 220178396277508695, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
       propertyPath: m_Radius
       value: 0.5659311
@@ -370,23 +378,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2245715121580507841, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.8920649
+      value: 0.69161797
       objectReference: {fileID: 0}
     - target: {fileID: 2245715121580507841, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.90399766
+      value: 0.7008694
       objectReference: {fileID: 0}
     - target: {fileID: 2245715121580507841, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.90399766
+      value: 0.7008694
       objectReference: {fileID: 0}
     - target: {fileID: 2245715121580507841, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0577
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 2245715121580507841, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0585
+      value: -0.1824
       objectReference: {fileID: 0}
     - target: {fileID: 2245715121580507841, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -429,3 +437,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
+--- !u!1 &4915226627498276176 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 607408901927411617, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
+  m_PrefabInstance: {fileID: 5502158216262871793}
+  m_PrefabAsset: {fileID: 0}

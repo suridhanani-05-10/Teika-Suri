@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 607408901927411617}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.1307, y: -3.1729, z: 0}
-  m_LocalScale: {x: 0.865548, y: 0.87712604, z: 0.87712604}
+  m_LocalPosition: {x: 6.3985, y: -3.4172, z: 0}
+  m_LocalScale: {x: 0.6443342, y: 0.65295315, z: 0.65295315}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -260,5 +260,16 @@ MonoBehaviour:
   timeStart: 0
   timeThusFar: 0
   gameOver: {fileID: 0}
-  fruits: []
-  fruitType: 0
+  fruits:
+  - {fileID: 8754401760868976057, guid: 107b4f9dccc384d0e9f8c0818e9bc3be, type: 3}
+  - {fileID: 8766230169290853545, guid: 710724841bd9a477fa6206492f920258, type: 3}
+  - {fileID: 4915226627498276176, guid: f59acc054e12447ad901a4b888128e5a, type: 3}
+  - {fileID: 1422592512003769027, guid: d2aa069062a454d99859cb6c09288617, type: 3}
+  - {fileID: 2031016386244142767, guid: 576ff73b721c64e939fe8264d2da95c4, type: 3}
+  - {fileID: 8932292882121074675, guid: 36b31cd69ee0548459ed1052184e1408, type: 3}
+  - {fileID: 7030258907178243164, guid: c7126253a17b743fc84e2779a4285c79, type: 3}
+  - {fileID: 607408901927411617}
+  - {fileID: 1097411271260522947, guid: cf263433381b04a86947230f4f33ea7a, type: 3}
+  - {fileID: 875687737722413546, guid: 063d1c53ce04044f6a943cf1a19a2f3f, type: 3}
+  - {fileID: 3859992993753626663, guid: 127d254f1b4db4e6e9efd4fb207497e2, type: 3}
+  fruitType: 7

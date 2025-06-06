@@ -12,7 +12,6 @@ public class FruitBehavior : MonoBehaviour{
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start(){
         timeStart = Time.time; //Get current Time
-        fruits = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>().fruits;
     
     }
 
@@ -25,7 +24,7 @@ public void OnCollisionEnter2D(Collision2D collision) {
     if (collision.gameObject.CompareTag("Fruit")) {
         GameObject otherFruit = collision.gameObject;
         int otherFruitType = otherFruit.GetComponent<FruitBehavior>().fruitType;
-        if (fruitType == otherFruitType && fruitType != 9) {
+        if (fruitType == otherFruitType && fruitType != 10) {
             
             if (transform.position.x > otherFruit.transform.position.x ||
                 (transform.position.y > otherFruit.transform.position.y

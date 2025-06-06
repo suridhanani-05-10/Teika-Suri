@@ -2,7 +2,7 @@ using UnityEngine;
 using TMPro;
 
 public class PlayerBehavior : MonoBehaviour {
-    
+
     public float speed;
     public GameObject[] fruits;
     public GameObject currentFruit;
@@ -35,9 +35,14 @@ public class PlayerBehavior : MonoBehaviour {
 
         if (currentFruit !=null) {
             fruitType = currentFruit.GetComponent <FruitBehavior>().fruitType;
-                if (fruitType < 5) {
-                    min = -6;
-                    max = 6;
+                if (fruitType < 4) {
+                    min = -7.86f;
+                    max = 0.3f;
+                } 
+
+                if (fruitType == 9) {
+                    min = -7.1f;
+                    max = -0.2f;
                 } 
 
             Vector3 fruitOffset = new Vector3(0f, -1f, 0f);
