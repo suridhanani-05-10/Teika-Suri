@@ -38,14 +38,14 @@ public class PlayerBehavior : MonoBehaviour {
 
         if (currentFruit !=null) {
             fruitType = currentFruit.GetComponent <FruitBehavior>().fruitType;
-                if (fruitType < 4) {
-                    min = -7.86f;
+                if (fruitType <= 5) {
+                    min = -7.8f;
                     max = 0.3f;
                 } 
 
-                if (fruitType == 9) {
-                    min = -7.1f;
-                    max = -0.2f;
+                if (fruitType == 7) {
+                    min = -7.537f;
+                    max = -0.019f;
                 } 
 
             Vector3 fruitOffset = new Vector3(0f, -1f, 0f);

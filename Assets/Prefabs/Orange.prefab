@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -715343747971079102, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
+      propertyPath: fruitType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -715343747971079102, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
+      propertyPath: 'fruits.Array.data[5]'
+      value: 
+      objectReference: {fileID: 8932292882121074675}
     - target: {fileID: 449202030858526475, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.5799999
@@ -405,3 +413,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
+--- !u!1 &8932292882121074675 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 607408901927411617, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
+  m_PrefabInstance: {fileID: 8329427441958828114}
+  m_PrefabAsset: {fileID: 0}

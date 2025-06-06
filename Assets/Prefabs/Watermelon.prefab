@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -715343747971079102, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
+      propertyPath: fruitType
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -715343747971079102, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
+      propertyPath: 'fruits.Array.data[9]'
+      value: 
+      objectReference: {fileID: 875687737722413546}
     - target: {fileID: 449202030858526475, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 2.78
@@ -1071,6 +1079,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 607408901927411617, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5321326111830969246}
+    - targetCorrespondingSourceObject: {fileID: 607408901927411617, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6322340915189334393}
   m_SourcePrefab: {fileID: 100100000, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
 --- !u!1 &875687737722413546 stripped
 GameObject:
@@ -1099,3 +1110,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6322340915189334393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875687737722413546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8025500bcd3b542159744a95bbc1db59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: fruitTupe
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -715343747971079102, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
+      propertyPath: fruitType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -715343747971079102, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
+      propertyPath: 'fruits.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8754401760868976057}
     - target: {fileID: 220178396277508695, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
       propertyPath: m_Radius
       value: 0.45219502
@@ -429,3 +437,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
+--- !u!1 &8754401760868976057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 607408901927411617, guid: f9b8376c7dc304bd68b65e7a2356b51f, type: 3}
+  m_PrefabInstance: {fileID: 8147030595070679576}
+  m_PrefabAsset: {fileID: 0}
